@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ticket Booking System</title>
+<style>
+body{
+    font-family: Arial;
+    background-color: #f2f2f2;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.container{
+    width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input, select{
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Online Ticket Booking</h2>
+</header>
+
+<div class="container">
+
+<h3>Book Your Ticket</h3>
+
+<form>
+
+<label>Name:</label>
+<input type="text" placeholder="Enter your name">
+
+<label>Email:</label>
+<input type="email" placeholder="Enter your email">
+
+<label>Select Event:</label>
+<select>
+<option>Movie</option>
+<option>Bus</option>
+<option>Train</option>
+<option>Concert</option>
+</select>
+
+<label>Date:</label>
+<input type="date">
+
+<label>Number of Tickets:</label>
+<input type="number" min="1" max="10">
+
+<button type="submit">Book Ticket</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
